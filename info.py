@@ -22,7 +22,7 @@ ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ
 USERNAME = environ.get('USERNAME', "https://t.me/skbots0") # ADMIN USERNAME
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002459597070'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+rh4V2xYC-1hjNDI1')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002340172655').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002340172655 -1002234478136').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://FlixgenieBot:FlixgenieBot@flixgeniebot.qdvjz.mongodb.net/?retryWrites=true&w=majority&appName=FlixgenieBot")
